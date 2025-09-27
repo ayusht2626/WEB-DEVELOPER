@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile Friendly Website</title>
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #333;
+    }
+
+    nav a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background: #4facfe;
+    }
+
+    .container {
+      display: flex;
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .main {
+      flex: 3;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .sidebar {
+      flex: 1;
+      background: #e8f0fe;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+      height: auto;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #333;
+      color: white;
+      margin-top: 20px;
+    }
+
+    /* ✅ Mobile Responsive Adjustments */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid #444;
+      }
+
+      .container {
+        flex-direction: column;
+      }
+
+      .main, .sidebar {
+        width: 100%;
+      }
+
+      body {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>My Mobile-Friendly Website</h1>
+    <p>Resize your screen to see responsiveness</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="main">
+      <h2>Welcome!</h2>
+      <p>
+        This is a demo website that adapts beautifully to mobile devices using
+        <strong>CSS Media Queries</strong>. On smaller screens, the layout
+        stacks vertically, font sizes adjust, and the navigation becomes more
+        mobile-friendly.
+      </p>
+      <img src="https://picsum.photos/800/400" alt="Sample Image">
+    </div>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h3>Sidebar</h3>
+      <p>Useful links and extra information can go here.</p>
+    </aside>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 My Website | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
